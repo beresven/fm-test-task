@@ -3,8 +3,9 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 class BaseHTTPHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
+        self.send_header("Content-Type", "text/plain")
         self.end_headers()
-        response = "<b><i>Hello from Effective Mobile!</i></b>"
+        response = "Hello from Effective Mobile!"
         self.wfile.write(response.encode())
 
 def run(server_class=HTTPServer, handler_class=BaseHTTPHandler):
