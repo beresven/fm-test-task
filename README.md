@@ -4,7 +4,7 @@
 
 Клонировать актуальный репозиторий проекта:
 ```bash
-git clone git@github.com:beresven/FM_testing.git
+git clone git@github.com:beresven/fm-test-task.git
 ```
 
 Скомпилировать образ backend приложения:
@@ -36,6 +36,6 @@ Nginx обрабатывает обращение по 80 порту и пере
 
 ## Используемые технологии
 
-- Nginx 1.25
+- Nginx 1.29-alpine
 - Python 3.x, http.server
 - Docker, Docker compose
