@@ -19,6 +19,7 @@ services:
     image: ${BACKEND_IMAGE}
     hostname: ${BACKEND_HOSTNAME}
     container_name: ${BACKEND_CONTAINER_NAME}
+    user: "1000:1000"
     networks:
       - backend_network
 
